@@ -1,0 +1,20 @@
+
+body {
+  background-color: #E8ECEF;
+}
+
+.centered {
+    padding-top: 70px;
+    text-align: center;
+}
+
+
+.event-text {
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(10, 10, 10);
+  background-color: #E8ECEF;
+}
+.event-button {
+  padding :20 10 10 20;
+}

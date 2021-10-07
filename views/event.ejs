@@ -1,0 +1,44 @@
+<%- include('partials/header') %>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <i class="fas fa-calendar-alt fa-6x"></i>
+    <h1 class="display-3">Create an Event</h1>
+    <hr>
+    <a class="btn btn-light btn-lg" href="/logout" role="button">Log Out</a>
+    <a class="btn btn-light btn-lg" href="/changepassword" role="button">Change password</a>
+    <a class="btn btn-light btn-lg" href="/changepassword" role="button">Update password</a>
+    <a class="btn btn-light btn-lg" href="/changepassword" role="button">Reset password</a>
+    <a class="btn btn-dark btn-lg" href="/createevent" role="button">Create event</a>
+  </div>
+
+
+  <div>
+    <h2>My Events </h2>
+
+    <% usersWithSecrets.forEach(function(user){ %>
+    <div class="container">
+      <div class="row ">
+        <div class="col-sm">
+          <p class="event-text"><%=user.event%></p>
+        </div>
+        <div class="col-sm">
+          <p><a class="btn btn-dark btn-lg" href="/invitepeople">Invite People</a></p>
+        </div>
+        <div class="col-sm">
+          <p class="event-text"><a class="btn btn-dark btn-lg" href="/list">List osf invited peoople</a></p>
+        </div>
+        <div class="col-sm">
+          <p class="event-text">Event (Status)</p>
+        </div>
+      </div>
+    </div>
+    <div>
+
+    </div>
+    <% }) %>
+    <p></p>
+  </div>
+</div>
+
+<%- include('partials/footer') %>
